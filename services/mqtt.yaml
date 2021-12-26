@@ -1,0 +1,7 @@
+# invoke with `ansible-playbook mqtt.yaml -i ./hosts.yaml`
+
+- name: playbook to set up a secured mqtt server
+  hosts: mufasa.local
+  become: true
+  roles:
+    - samdoran.mosquitto
